@@ -1,0 +1,28 @@
+
+#about {
+    height: 100vh;
+    margin-top: 10vh;
+
+    .card-link {
+        cursor: pointer;
+    }
+
+    #img-row {
+        position: relative;
+
+        .about-img {
+            height: 40%;
+            object-fit: cover;
+            position: absolute;
+        }
+
+        #img-1 {
+            top: 8.5%;
+        }
+
+        #img-2 {
+            bottom: 0;
+        }
+    }
+}
+

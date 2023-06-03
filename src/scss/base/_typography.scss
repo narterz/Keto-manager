@@ -1,0 +1,117 @@
+@use '../functions/functions' as get;
+@use '../functions/breakpoints' as b;
+
+$font-sizes: (
+    xx-small: 0.725rem,
+    x-small: 1rem,
+    small: 1.125rem,
+    medium: 1.25rem,
+    normal: 2rem,
+    large: 3rem,
+    xLarge: 5rem,
+    xxLarge: 7rem
+);
+
+#nav {
+    #nav__logo {
+        @include b.phone-breakpoint {
+            font-size: map-get($font-sizes, small );
+        }
+
+    }
+}
+
+#nav {
+    .nav__links {
+        font-size: map-get($font-sizes, medium);
+    }
+    
+    #nav__btn {
+        font-weight: 400;
+    }
+}
+
+#home {
+    .btn-lg {
+        @include b.phone-breakpoint {
+            font-size: map-get($font-sizes, small );
+        }
+    }
+
+
+
+}
+
+#about {
+    
+    h4 {
+        font-weight: 600;
+    }
+    
+}
+
+#sidebar {
+    .sidebar__links {
+        font-size:map-get($font-sizes, x-small);
+
+    }
+    
+}
+
+.undertext {
+    font-size: map-get($font-sizes, small);
+    font-weight: 300;
+}
+
+#card-lg {
+    &>h5 {
+        font-size: map-get($font-sizes, small);
+    }
+}
+.btn-sm {
+    font-weight: 400;
+}
+
+#location {
+    
+    #location__hero__btn {
+        font-weight: 600;
+    }
+
+    .undertitle-lg {
+        font-size: 1.4rem !important;
+    }
+}
+
+#contact__info-header {
+    h5 {
+        font-weight: 400 !important;
+    }
+
+}
+
+.mealCard__text {
+    font-size: 1.125rem !important;
+}
+
+#contact {
+    #contact__info-header {
+        p {
+            font-size: map-get($font-sizes, medium);
+        }
+    }
+
+    .form-checks {
+        font-size: map-get($font-sizes, x-small) !important;
+    }
+
+    .contact__icons {
+        font-size: map-get($font-sizes, small);
+    }
+}
+
+#footer {
+    #footer__cr {
+        font-size: map-get($font-sizes, x-small );
+    }
+}

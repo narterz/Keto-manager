@@ -1,0 +1,53 @@
+@use '../functions/functions' as deep-get;
+@use '../functions/breakpoints' as b;
+
+@mixin button-resets {
+    border: none !important;
+    opacity: 1;
+    transition: opacity 400ms ease-in;
+};
+
+.btn-lg,
+.btn-md,
+.btn-sm,
+.btn-xs {
+    @include button-resets;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.btn-lg {
+    @include b.desktop-breakpoint {
+        // width: 50% !important;
+        height: 4rem !important;
+    }
+    @include b.laptop-breakpoint {
+        width: 12rem !important;
+        height: 5rem !important;
+    }
+    @include b.tablet-breakpoint {
+        width: 10rem !important;
+        height: 5rem !important;
+    }
+    @include b.phone-breakpoint {
+        width: 9rem !important;
+        height: 4rem !important;
+    }
+}
+
+.btn-md {
+    width: 9rem;
+    border: none !important;
+}
+
+
+.btn-long {
+    position: absolute;
+    bottom: 10%;
+    right: 37.5%;
+    width: 24.2% !important;
+    border: none !important;
+}
+

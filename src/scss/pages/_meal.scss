@@ -1,0 +1,127 @@
+#meal {
+    height: 180vh;
+
+    .meal__background-icons {
+        height: 15%;
+        opacity: 0.3;
+    }
+
+    #healthyIcon {
+        bottom: 3%;
+        right: 3%;
+    }
+
+    #veggieIcon {
+        top: 35%;
+        right: 3%;
+    }
+
+    #saladIcon {
+        bottom: 3%;
+        left: 3%;
+    }
+
+    #dietIcon {
+        top: 35%;
+        left: 3%;
+    }
+
+    //download image so watermark does not appear
+    #meal__header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.781),
+                rgba(0, 0, 0, 0.788)),
+            url('https://img.freepik.com/free-photo/quinoa-mushrooms-lettuce-red-cabbage-spinach-cucumbers-tomatoes-bowl-buddha-dark-top-view_127032-1963.jpg?w=1800&t=st=1683847437~exp=1683848037~hmac=2db68167de1a6afe8c1ab9cfc21d5128e339312187f9e1bac36edf8cf3840204');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        margin-right: -15px !important;
+        margin-left: -15px;
+        height: 35%;
+    }
+
+    #meal__body {
+        height: 65%;
+        //react bootstrap glitch causing meal cards to not be affected by flex
+        //instead grid is done to align manually
+        .meal__items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas: "meal0 meal1 meal2";
+
+            #meal0 {
+                grid-area: "meal0";
+            }
+
+            #meal1 {
+                grid-area: "meal1";
+            }
+
+            #meal2 {
+                grid-area: "meal2";
+            }
+
+            .bottom-btn {
+                position: absolute;
+                bottom: 10%;
+                right: 37.5%;
+                width: 24.2% !important;
+                border: none !important;
+            }
+        }
+
+        #meal__spinner {
+            position: absolute;
+            left: 47%;
+            top: 20%;
+        }
+    }
+
+    #ketoVars {
+        .ketoVars__card {
+            width: 18%;
+            cursor: pointer;
+        }
+
+        .ketoVars__logo {
+            border-radius: 50%;
+            height: 5rem;
+            width: 5rem;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            .ketoVar--icons {
+                position: absolute;
+            }
+        }
+    }
+
+    Button {
+        opacity: 1;
+        transition: opacity 250ms ease-in;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+#mealCardSmall {
+    #mealCard__img {
+        object-fit: contain;
+    }
+
+    .mealCard__btn {
+        outline: none !important;
+        border: none !important;
+    }
+    .subtitle {
+        margin-bottom: 5rem !important;
+        font-weight: lighter;
+    }
+}
+
+
+

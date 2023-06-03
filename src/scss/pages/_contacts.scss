@@ -1,0 +1,54 @@
+#contact {
+    height: 100vh;
+
+    #contact__header {
+        height: 30%;
+
+        #contact__header__subtitle {
+            opacity: 0.6;
+        }
+    }
+
+    #contact__body {
+        height: 70%;
+
+        #contact__card {
+            width: 85%;
+
+            #contact__info-header {
+                height: 30%;
+            }
+        }
+
+        Form {
+            width: 90%;
+
+            #contact__forms-users {
+                height: 30%;
+
+                .contact__form-input {
+                    width: 75%;
+                }
+            }
+
+            #contact__forms-btn {
+                height: 20%;
+
+                #forms-btn {
+                    width: 30%;
+                }
+            }
+
+            #contact__forms-checkbox {
+                width: 99%;
+            }
+        }
+    }
+
+    .contact__form-input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-radius: 0px;
+    }
+}

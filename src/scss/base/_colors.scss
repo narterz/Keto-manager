@@ -1,0 +1,377 @@
+$colors: (
+    main: #333333,
+    main-dark: #101114,
+    secondary: #9dca00,
+    secondary-dark: #7ea200,
+    secondary-light: #a7cf1a,
+    secondary-lightest: #bada4d,
+    teitary: #2b343b,
+    lighter: #555555,
+    lightest: hsla(0, 0%, 99%, 0.233),
+    slight-white: #f9f9fb, 
+    dotted-border: #cdcece,
+    leafLogo: #9dca00,
+    breakfastLogo: #faf605,
+    drinkLogo: #ff5d35,
+    dinnerLogo: #00eeff,
+    dessertLogo: #46f800,
+    contactLogos: #8C1AFF
+);
+
+.App {
+    background-color: map-get($colors, main);
+    color: white;
+}
+
+#nav {
+    color: white;
+
+    #nav__top {
+        background-color: map-get($colors, main);
+        border-bottom: 2px solid map-get($colors, main);
+    }
+
+    #nav__bottom {
+        background-color: map-get($colors, teitary);
+
+        .nav__links-values, .nav__links-socials {
+            color: white;
+    
+            &:hover {
+                transition: color 250ms ease-in;
+                color: map-get($colors, secondary);
+            }
+    
+            &::before {
+                background-color: map-get($colors, secondary);
+            }
+        }
+    }
+}
+
+#sidebar {
+    background-color: map-get($colors,  main);
+}
+
+
+#home {
+    color: white;
+
+    .shape-fill {
+        fill: map-get($colors, main);
+    }
+
+    b {
+        color: map-get($colors, secondary);
+    }
+}
+
+
+.btn-md,
+.btn-lg {
+    background-color: map-get($colors, secondary) !important;
+    opacity: 1;
+    border: none !important;
+
+    &:hover {
+        opacity: 0.7;
+        transition: opacity 250ms ease-in-out;
+    }
+}
+
+
+.undertext {
+    border-left: 5px solid map-get($colors, secondary);
+}
+
+#about,
+#about__container {
+    background: map-get($colors, main);
+    background: linear-gradient(180deg,
+            map-get($colors, main) 0%,
+            map-get($colors, lighter) 100%);
+
+    .about__blob-tall,
+    .about__blob-wide {
+        background-color: map-get($colors, lightest);
+    }
+
+    #about-card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .card-link {
+            color: white;
+
+            &:hover {
+                transition: color 250ms ease-in-out;
+                color: map-get($colors, secondary);
+            }
+
+            &:last-child {
+                border-left: 2px solid map-get($colors, secondary);
+            }
+        }
+    }
+
+    #about--shape-fill {
+        fill: map-get($colors, teitary);
+    }
+
+}
+
+
+#card-lg {
+    background-color: map-get($colors, main);
+    border: 4px solid map-get($colors, secondary);
+
+    .icon-wrap {
+        background-color: map-get($colors, secondary);
+    }
+}
+
+
+
+#meal {
+    background-color: map-get($colors, main-dark);
+
+    #meal-btn-row>* {
+        background-color: map-get($colors, secondary);
+    }
+
+    .meal-btn-col {
+        border: 5px dotted map-get($colors, dotted-border);
+
+        &:hover {
+            transition: all 250ms ease-in;
+            border: 5px dotted map-get($colors, teitary);
+        }
+
+        .meal-btn-arrow {
+            background-color: map-get($colors, teitary);
+        }
+    }
+
+    .ketoVars__card,
+    .ketoVars__list>* {
+        background-color: map-get($colors, secondary);
+    }
+
+    .ketoVars__card>*,
+    .ketoVars__list>* {
+        color: white;
+    }
+
+    .ketoVars__logo {
+        background-color: map-get($colors, secondary-lightest);
+    }
+
+    .btn-long {
+        background-color: map-get($colors, secondary );
+    }
+
+}
+
+#meal-card,
+#card-body {
+    background-color: map-get($colors, teitary);
+
+    #meal-btn {
+        background-color: map-get($colors, main);
+    }
+
+    .accord-header>* {
+        background-color: map-get($colors, secondary);
+    }
+}
+
+
+#whatKeto__wrapper,
+#whatKeto {
+    background-color: map-get($colors, lighter);
+
+    .whatKeto__icon-wrapper {
+        background-color: map-get($colors, secondary);
+    }
+}
+
+
+.whatKeto__row:hover {
+    box-shadow: 0 0 11px map-get($colors, main);
+    clip-path: inset(0px -5px -5px -0px);
+}
+
+#whatKeto__img {
+    box-shadow: 0 0 11px map-get($colors, main);
+}
+
+#foodCard {
+    background-color: map-get($colors, secondary);
+}
+
+#meal__form {
+
+    #seachLogo {
+        background-color: map-get($colors, secondary);
+        border-color: map-get($colors, secondary);
+    }
+
+    #meal__search:focus {
+        border-color: map-get($colors, secondary);
+        box-shadow: 0 0 0 2px map-get($colors, secondary);
+    }
+
+    #meal__search::selection {
+        transition: 250ms;
+    }
+
+    .selects,
+    #meal__search {
+        border: 1.3px solid map-get($colors, secondary);
+    }
+
+    option {
+        background-color: map-get($colors, secondary);
+        border-top: 1px solid white;
+        color: white;
+    }
+}
+
+#mealCardSmall {
+    color: white;
+    background-color: map-get($colors, teitary);
+
+
+
+    .mealCard__btn {
+        background-color: map-get($colors, secondary);
+    }
+}
+
+//logos
+.breakfastLogo {
+    color: map-get($colors, breakfastLogo);
+}
+
+.leafLogo {
+    color: map-get($colors, leafLogo);
+}
+
+.breadLogo {
+    color: beige;
+}
+
+.drinkLogo {
+    color: map-get($colors, drinkLogo);
+}
+
+.bottom-btn {
+    background-color: map-get($colors, secondary) !important;
+}
+
+#location {
+    background-color: #f9f9fb;
+
+    #location__hero {
+        background-color: map-get($colors, secondary);
+        color: white;
+        
+        #location__hero__btn {
+            background-color: white;
+            color: map-get($colors, secondary);
+            box-shadow: inset 0 0 0 0 map-get($colors, secondary );
+            
+            &:hover {
+                box-shadow: inset 400px 0 0 0 map-get($colors, secondary);
+                color: white;
+                outline: solid 2px white;
+            }
+        }
+        
+        #location__heroImg-container {
+            background-color: map-get($colors, lightest );
+        }
+    }
+
+    #location__maps {
+        background-color: white;
+
+        &>* {
+            color: black;
+        }
+
+        .undertitle-lg {
+            opacity: 0.6;
+        }
+
+        #location__card {
+            #locationInfo__btn {
+                background-color: map-get($colors, secondary );
+            }
+        }
+    }
+}
+
+
+#contact {
+    background-color: #f9f9fb;
+
+    #contact__header {
+        color: black;
+    }
+
+    #contact__body {
+
+        #contact__card {
+            box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        #contact__info {
+            background-color: map-get($colors, secondary );
+            color: white
+        }
+
+        #contact__forms {
+            background-color: white;
+            color: black;
+
+            .contact__forms-label {
+                opacity: 0.6;
+            }
+
+            #forms-btn {
+                background-color: map-get($colors, secondary );
+                color: white;
+                box-shadow: inset 0 0 0 0 white;
+                transition: all 0.4s ease-in;
+                
+                &:hover {
+                    box-shadow: inset 400px 0 0 0 white;
+                    color: map-get($colors, secondary );
+                    outline: solid 2px map-get($colors, secondary );
+                }
+            }
+        }
+    }
+
+    .contact__icon {
+        color: map-get($colors, slight-white );
+    }
+
+    Button {
+        background-color: map-get($colors, secondary );
+    }
+}
+
+#footer {
+    .leafLogo {
+        color: map-get($colors, secondary );
+    }
+
+    button {
+        background-color: map-get($colors, secondary );
+    }
+
+}
+
+

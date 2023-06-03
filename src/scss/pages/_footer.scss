@@ -1,0 +1,23 @@
+#footer {
+    height: 30vh;
+
+    Button {
+        width: 45%;
+    }
+
+    Form {
+
+        #footer__sub {
+            width: 80%;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        Button {
+            width: 20%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+    }
+}
