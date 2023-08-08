@@ -38,7 +38,7 @@ function About() {
                     </Row>
                     <Row>
                         <Col>
-                            <p className='undertext p-3 text-start lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, harum. Error nihil expedita reprehenderit laboriosam illo beatae modi magnam facilis!</p>
+                            <p className='undertext p-3 text-start lead'>It can be hard to wrap your head around the keto diet. Our job is to make you understand and love the keto diet. Understand and explore the diets restrictions, benefits and tasty meals</p>
                         </Col>
                     </Row>
                     <Row className='h-25'>

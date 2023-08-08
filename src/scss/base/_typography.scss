@@ -37,9 +37,6 @@ $font-sizes: (
             font-size: map-get($font-sizes, small );
         }
     }
-
-
-
 }
 
 #about {
@@ -47,15 +44,12 @@ $font-sizes: (
     h4 {
         font-weight: 600;
     }
-    
 }
 
 #sidebar {
     .sidebar__links {
         font-size:map-get($font-sizes, x-small);
-
     }
-    
 }
 
 .undertext {

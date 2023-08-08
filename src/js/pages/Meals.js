@@ -28,6 +28,8 @@ function Meal() {
     const [featuredMeals, setFeaturedMeals] = useState(null);
     const [mealIndex, setMealIndex] = useState(0);
 
+    console.log(featuredMeals)
+
     useEffect(() => {
         const fetchData = async () => {
             try {

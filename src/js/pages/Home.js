@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 //TODO
     //Add implementation to hero buttons
@@ -38,8 +39,18 @@ function Home() {
             </Row>
             <Row className='d-flex flex-row align-items-center w-50'>
                 <Col className='d-flex justify-content-between'>
-                    <Button className='btn-lg lead w-25'>What is Keto?</Button>
-                    <Button className='btn-lg lead w-25'>View meals</Button>
+                    <a href="https://foodinsight.org/keto-diet-101-what-to-know-before-you-commit/" className='w-100'>
+                        <Button className='btn-lg lead w-25'>What is Keto?</Button>
+                    </a>
+                    <Link 
+                        className='link w-25'
+                        to='meal'
+                        duration={500}
+                        offset={-55}
+                        smooth={true}
+                    >
+                        <Button className='btn-lg lead w-100'>View meals</Button>
+                    </Link>
                 </Col>
             </Row>
             <Container className="m-0 p-0 mt-0" id='home--divider-bottom' fluid>

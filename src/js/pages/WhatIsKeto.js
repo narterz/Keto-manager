@@ -16,11 +16,11 @@ function WhatIsKeto(){
 
     return (
         <Container fluid id='whatKeto__wrapper'>
-            <Container className='d-flex flex-row' id='whatKeto'>
+            <Container className='flex-row d-flex' id='whatKeto'>
                 <Row className='w-50 d-flex flex-column'>
-                    <Col className='what-row p-4 w-100 h-25 d-flex justify-content-between flex-column' xl={4}>
+                    <Col className='p-4 what-row w-100 h-25 d-flex justify-content-between flex-column' xl={4}>
                         <h2 className='display-3'>What is Keto?</h2>
-                        <p className='lead text-justify mt-4' id='whatKeto__subtitle'>"Keto" short for Ketogenic diet is a low-carbohydrate, high-fat diet that has gained popularity in recent years for its potential weight loss benefits and other health advantages</p>
+                        <p className='mt-4 text-justify lead' id='whatKeto__subtitle'>"Keto" short for Ketogenic diet is a low-carbohydrate, high-fat diet that has gained popularity in recent years for its potential weight loss benefits and other health advantages</p>
                     </Col>
                     <Col className="what-info w-100 h-75 d-flex justify-content-evenly flex-column" xl={8}>
                         <Row className='whatKeto__row'>
@@ -29,7 +29,7 @@ function WhatIsKeto(){
                             </Col>
                             <Col xs={9} className='whatKeto__text-wrapper'>
                                 <h3>Heavy Fat</h3>
-                                <p className='lead'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti praesentium laborum dolorem quos facere.</p>
+                                <p className='lead'>Heavy consumption of fatty foods like oils, nuts, and fatty meats are essential to keto</p>
                             </Col>
                         </Row>
                         <Row className='whatKeto__row'>
@@ -39,7 +39,7 @@ function WhatIsKeto(){
                             </Col>
                             <Col xl={9} className='whatKeto__text-wrapper'>
                                 <h3>Limited Carbs</h3>
-                                <p className='lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae sint soluta ducimus provident?</p>
+                                <p className='lead'>Carb intake has to be reduced significantly, avoid grains, lugumes, and sugary and starchy foods</p>
                             </Col>
                         </Row>
                         <Row className='whatKeto__row'>
@@ -48,7 +48,7 @@ function WhatIsKeto(){
                             </Col>
                             <Col xl={9} className='whatKeto__text-wrapper'>
                                 <h3>Weight Loss Benefits</h3>
-                                <p className='lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, doloribus a. Sapiente, sequi reiciendis.</p>
+                                <p className='lead'>Increase fat and reduced carbs forces the body to use fat as a fuel source, helping you burn more fat</p>
                             </Col>
                         </Row>
                     </Col>
@@ -58,7 +58,7 @@ function WhatIsKeto(){
                         <motion.img
                             src='https://images.unsplash.com/photo-1574926054530-540288c8e678?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
                             alt='chicken and cream spinach'
-                            className='w-100 mt-auto mb-auto rounded'
+                            className='mt-auto mb-auto rounded w-100'
                             id='whatKeto__img'>
                         </motion.img>
                     </Col>
