@@ -1,5 +1,7 @@
 # Keto Manager: Discover popular keto meals
 
+![screenshot](keto-managers-home.png.png)
+
 ## A one page React application where you learn and explore the wonders of the keto diet
 
 Many people, including myself in the past, struggle with obesity and want to find a resonable diet that can help them shred weight. This projects seeks help people with this very issue by exploring the science, guidelines, and meals within the keto diet. This project uses data from the Spoonacular API to assist users in finding keto friendly meals that work for them. The prominant features in this app include: 
